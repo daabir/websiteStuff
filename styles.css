@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Papyrus&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Very light gray background */
+    font-family: 'Papyrus', fantasy;
+}
+
+.container {
+    text-align: center;
+}
+
+.animated-text {
+    font-size: 80px;
+    color: #333; /* Dark gray text */
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-out, slideUp 3s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
